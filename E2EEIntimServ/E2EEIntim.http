@@ -1,0 +1,6 @@
+@E2EEIntim_HostAddress = http://localhost:5197
+
+GET {{E2EEIntim_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

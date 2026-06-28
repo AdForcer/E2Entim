@@ -1,0 +1,162 @@
+
+
+# Зависимости
+E2EEntim_Client/node_modules/
+
+# Логи
+E2EEntim_Client/*.log
+E2EEntim_Client/npm-debug.*
+E2EEntim_Client/yarn-error.*
+
+# Android билды
+E2EEntim_Client/android/build/
+E2EEntim_Client/android/app/build/
+E2EEntim_Client/android/.gradle/
+E2EEntim_Client/android/.kotlin/
+E2EEntim_Client/android/local.properties
+E2EEntim_Client/android/*.iml
+E2EEntim_Client/android/*.jks
+E2EEntim_Client/android/*.p12
+E2EEntim_Client/android/app/.cxx/
+
+# iOS билды
+E2EEntim_Client/ios/build/
+E2EEntim_Client/ios/Pods/
+E2EEntim_Client/ios/Podfile.lock
+E2EEntim_Client/ios/*.xcworkspace/
+E2EEntim_Client/ios/*.xcworkspace/xcuserdata/
+E2EEntim_Client/ios/*.xcodeproj/xcuserdata/
+E2EEntim_Client/ios/*.xcodeproj/project.xcworkspace/
+
+# Временные файлы клиента
+E2EEntim_Client/.bundle/
+E2EEntim_Client/.claude/
+E2EEntim_Client/__tests__/
+E2EEntim_Client/*.tmp
+E2EEntim_Client/*.temp
+E2EEntim_Client/.DS_Store
+
+# Конфиги клиента
+E2EEntim_Client/.env
+E2EEntim_Client/.env.local
+E2EEntim_Client/.env.development
+E2EEntim_Client/.env.production
+E2EEntim_Client/.env.test
+
+# IDE клиента
+E2EEntim_Client/.idea/
+E2EEntim_Client/.vscode/
+E2EEntim_Client/*.iml
+E2EEntim_Client/.project
+E2EEntim_Client/.classpath
+E2EEntim_Client/.settings/
+
+# Сборка клиента
+E2EEntim_Client/dist/
+E2EEntim_Client/build/
+E2EEntim_Client/out/
+
+
+
+# Билд артефакты
+E2EEntimServ/bin/
+E2EEntimServ/obj/
+E2EEntimServ/out/
+
+# Базы данных
+E2EEntimServ/*.db
+E2EEntimServ/*.db-shm
+E2EEntimServ/*.db-wal
+E2EEntimServ/chat.db
+
+# Конфиги сервера
+E2EEntimServ/appsettings.Development.json
+E2EEntimServ/appsettings.Local.json
+
+# Логи сервера
+E2EEntimServ/*.log
+E2EEntimServ/*.tmp
+E2EEntimServ/*.user
+E2EEntimServ/*.userosscache
+E2EEntimServ/*.vs
+
+# Visual Studio
+E2EEntimServ/.vs/
+E2EEntimServ/*.suo
+E2EEntimServ/*.user
+E2EEntimServ/*.sln.docstates
+E2EEntimServ/TestResults/
+
+
+
+# Системные
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+.Spotlight-V100
+.Trashes
+
+# Архивы
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ключи и сертификаты 
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.truststore
+
+# Временные файлы
+*.tmp
+*.temp
+*.cache
+*.bak
+*.backup
+
+# Логи (общие)
+*.log
+
+
+
+# npm / yarn / pnpm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# NuGet
+**/packages/
+**/*.nupkg
+
+
+
+docker-compose.override.yml
+.dockerignore
+
+
+
+**/.git/
+**/.gitattributes
+**/.gitmodules
+
+
+
+**/*.draft.md
+**/*.notes.md
+**/TODO.md
+**/TODO.txt
+
+
+
+**/.env*
+**/secrets.*
+**/credentials.*
+**/config.local.*
