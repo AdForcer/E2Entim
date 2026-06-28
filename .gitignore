@@ -1,4 +1,7 @@
-
+# Node.js
+node_modules/
+**/node_modules/
+**/node_modules/**/*
 
 # Зависимости
 E2EEntim_Client/node_modules/
