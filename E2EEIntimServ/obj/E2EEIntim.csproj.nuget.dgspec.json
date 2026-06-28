@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj": {}
+    "C:\\Client_E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj": {}
   },
   "projects": {
-    "C:\\E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj": {
+    "C:\\Client_E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj",
+        "projectUniqueName": "C:\\Client_E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj",
         "projectName": "E2EEIntim",
-        "projectPath": "C:\\E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj",
+        "projectPath": "C:\\Client_E2EEntim\\E2EEIntimServ\\E2EEIntim.csproj",
         "packagesPath": "C:\\Users\\AdForcer\\.nuget\\packages\\",
-        "outputPath": "C:\\E2EEntim\\E2EEIntimServ\\obj\\",
+        "outputPath": "C:\\Client_E2EEntim\\E2EEIntimServ\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
