@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 USER $APP_UID
 WORKDIR /app
 EXPOSE 8080
-EXPOSE 8081
+EXPOSE 443
 
 # Этап 2: Сборка
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
@@ -23,5 +23,6 @@ RUN dotnet publish "./E2EEIntim.csproj" -c $BUILD_CONFIGURATION -o /app/publish 
 # Этап 4: Финальный образ
 FROM base AS final
 WORKDIR /app
+
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "E2EEIntim.dll"]

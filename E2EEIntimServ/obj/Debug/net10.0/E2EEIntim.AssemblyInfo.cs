@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("E2EEIntim")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8aa3ff2db7de84c65d2a4c1513525c231059ffd9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+31b5705d46784f4a3d1f4b77f097fc2468596ed1")]
 [assembly: System.Reflection.AssemblyProductAttribute("E2EEIntim")]
 [assembly: System.Reflection.AssemblyTitleAttribute("E2EEIntim")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

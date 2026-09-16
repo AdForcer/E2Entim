@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Client_E2EEntim\\E2EEIntimServ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|c:\\client_e2eentim\\e2eeintimserv\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|c:\\client_e2eentim\\e2eeintimserv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|c:\\client_e2eentim\\e2eeintimserv\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|c:\\client_e2eentim\\e2eeintimserv\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{473026E2-FF1A-4362-5F01-063C86BFC410}|E2EEIntim.csproj|solutionrelative:hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "dockerfile",
               "DocumentMoniker": "C:\\Client_E2EEntim\\E2EEIntimServ\\dockerfile",
               "RelativeDocumentMoniker": "dockerfile",
               "ToolTip": "C:\\Client_E2EEntim\\E2EEIntimServ\\dockerfile",
               "RelativeToolTip": "dockerfile",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-06-28T19:16:59.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Client_E2EEntim\\E2EEIntimServ\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Client_E2EEntim\\E2EEIntimServ\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAAABUAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIMAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-26T22:13:27.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ChatHub.cs",
               "DocumentMoniker": "C:\\Client_E2EEntim\\E2EEIntimServ\\Hubs\\ChatHub.cs",
               "RelativeDocumentMoniker": "Hubs\\ChatHub.cs",
               "ToolTip": "C:\\Client_E2EEntim\\E2EEIntimServ\\Hubs\\ChatHub.cs",
               "RelativeToolTip": "Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwEUAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-26T22:13:41.1Z"
+              "WhenOpened": "2026-06-26T22:13:41.1Z",
+              "EditorCaption": ""
             }
           ]
         }

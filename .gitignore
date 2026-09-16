@@ -5,6 +5,7 @@ node_modules/
 
 # Зависимости
 E2EEntim_Client/node_modules/
+*.tar
 
 # Логи
 E2EEntim_Client/*.log

@@ -17,17 +17,35 @@ public class ChatHub : Hub
     {
         var httpContext = Context.GetHttpContext();
 
-        // SignalR с accessTokenFactory кладёт токен в query string, не в заголовки
-        var username = httpContext?.Request.Query["username"].ToString();
+        // Достаем ТОЛЬКО токен. SignalR при accessTokenFactory железно прокинет его
         var token = httpContext?.Request.Query["access_token"].ToString();
 
-        // Проверяем по базе
-        if (string.IsNullOrEmpty(username) || !_db.Users.Any(u => u.Username == username && u.Token == token))
+        // Подстраховка: если вдруг решишь перейти на заголовки
+        if (string.IsNullOrEmpty(token))
         {
-            Console.WriteLine($"[ОТКАЗ] Неудачная попытка входа. Имя: '{username}'");
+            var authHeader = httpContext?.Request.Headers["Authorization"].ToString();
+            if (!string.IsNullOrEmpty(authHeader) && authHeader.StartsWith("Bearer "))
+            {
+                token = authHeader.Substring(7);
+            }
+        }
+
+        // Ищем пользователя в БД чисто по токену
+        var user = await _db.Users.FirstOrDefaultAsync(u => u.Token == token);
+
+        if (user == null || string.IsNullOrEmpty(token))
+        {
+            Console.WriteLine($"[ОТКАЗ] Неудачная попытка входа. Токен не валиден или пуст.");
             Context.Abort();
             return;
         }
+
+        // Имя пользователя берем из подтвержденной записи в БД!
+        string username = user.Username;
+
+        // Сохраняем имя в контекст текущего соединения. 
+        // Context.Items живет всё время, пока клиент подключен к Хабу (даже на лонг-поллинге)
+        Context.Items["Username"] = username;
 
         OnlineUsers[username] = Context.ConnectionId;
         Console.WriteLine($"[ОНЛАЙН] Пользователь {username} зашел в чат!");
@@ -55,12 +73,20 @@ public class ChatHub : Hub
 
     public async Task SendEncryptedMessage(string senderUsername, string targetUsername, string encryptedPayload)
     {
-        var httpContext = Context.GetHttpContext();
-        var actualSender = httpContext?.Request.Query["username"].ToString();
+        var actualSender = Context.Items["Username"]?.ToString();
+
+        if (string.IsNullOrEmpty(actualSender))
+        {
+            actualSender = OnlineUsers.FirstOrDefault(x => x.Value == Context.ConnectionId).Key;
+        }
 
         Console.WriteLine($"=== ПОПЫТКА ОТПРАВКИ: {actualSender} хочет написать {targetUsername} ===");
 
-        if (actualSender != senderUsername) return;
+        if (string.IsNullOrEmpty(actualSender) || actualSender != senderUsername)
+        {
+            Console.WriteLine($"[ОТКАЗ] Попытка отправки от чужого имени или неавторизованный запрос.");
+            return;
+        }
 
         if (OnlineUsers.TryGetValue(targetUsername, out var connectionId))
         {
